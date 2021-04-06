@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -22,8 +23,8 @@ public class Ingredient {
 	@ManyToOne
 	private Recipe recipe;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	private UnitOfMeasure unitOfMeasure;
+	@OneToOne(fetch = FetchType.EAGER)
+	private UnitOfMeasure uom;
 	
 	public Long getId() {
 		return id;
@@ -56,6 +57,15 @@ public class Ingredient {
 	public void setRecipe(Recipe recipe) {
 		this.recipe = recipe;
 	}
+
+	public UnitOfMeasure getUom() {
+		return uom;
+	}
+
+	public void setUom(UnitOfMeasure uom) {
+		this.uom = uom;
+	}
+	
 	
 	
 	
