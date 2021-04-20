@@ -137,17 +137,17 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 				+ "\n"
 				+ "Read more: http://www.simplyrecipes.com/recipes/");
 		
-		guacNotes.setRecipe(guacRecipe);
+		//guacNotes.setRecipe(guacRecipe);
 		guacRecipe.setNotes(guacNotes);
 				
-		guacRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom, guacRecipe));
-		guacRecipe.getIngredients().add(new Ingredient("kosher Salt", new BigDecimal(2), teapoonUom, guacRecipe));
-		guacRecipe.getIngredients().add(new Ingredient("Fresh Lime Juice or Lemon Juice", new BigDecimal(2), tableSpoonUom, guacRecipe));
-		guacRecipe.getIngredients().add(new Ingredient("minced red onion or ...", new BigDecimal(2), tableSpoonUom, guacRecipe));
-		guacRecipe.getIngredients().add(new Ingredient("serrano chiles, stems and seeds", new BigDecimal(2), eachUom, guacRecipe));
-		guacRecipe.getIngredients().add(new Ingredient("Cilantro", new BigDecimal(2), tableSpoonUom, guacRecipe));
-		guacRecipe.getIngredients().add(new Ingredient("freshly grated black pepper", new BigDecimal(2), dashUom, guacRecipe));
-		guacRecipe.getIngredients().add(new Ingredient("ripe tomato seeds and pulp removed", new BigDecimal(2), eachUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("ripe avocados", new BigDecimal(2), eachUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("kosher Salt", new BigDecimal(2), teapoonUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("Fresh Lime Juice or Lemon Juice", new BigDecimal(2), tableSpoonUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("minced red onion or ...", new BigDecimal(2), tableSpoonUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("serrano chiles, stems and seeds", new BigDecimal(2), eachUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("Cilantro", new BigDecimal(2), tableSpoonUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("freshly grated black pepper", new BigDecimal(2), dashUom, guacRecipe));
+		guacRecipe.addIngredient(new Ingredient("ripe tomato seeds and pulp removed", new BigDecimal(2), eachUom, guacRecipe));
 		
 		
 		guacRecipe.getCategories().add(americanCategory);
@@ -199,15 +199,15 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 				+ "\n"
 				+ "Read more: https://www.simplyrecipes.com/recipes/spicy_grilled_chicken_tacos/");
 		
-		tacoNotes.setRecipe(tacosRecipe);
+		//tacoNotes.setRecipe(tacosRecipe);
 		tacosRecipe.setNotes(tacoNotes);		
 		
-		tacosRecipe.getIngredients().add(new Ingredient("Ancho Chili Powder", new BigDecimal(2), tableSpoonUom, tacosRecipe));
-		tacosRecipe.getIngredients().add(new Ingredient("Dried Oregano", new BigDecimal(2), teapoonUom, tacosRecipe));
-		tacosRecipe.getIngredients().add(new Ingredient("Dried Cumin", new BigDecimal(2), teapoonUom, tacosRecipe));
-		tacosRecipe.getIngredients().add(new Ingredient("Sugar", new BigDecimal(2), teapoonUom, tacosRecipe));
-		tacosRecipe.getIngredients().add(new Ingredient("Salt", new BigDecimal(2), teapoonUom, tacosRecipe));
-		tacosRecipe.getIngredients().add(new Ingredient("Clove of Garlic", new BigDecimal(2), eachUom, tacosRecipe));
+		tacosRecipe.addIngredient(new Ingredient("Ancho Chili Powder", new BigDecimal(2), tableSpoonUom, tacosRecipe));
+		tacosRecipe.addIngredient(new Ingredient("Dried Oregano", new BigDecimal(2), teapoonUom, tacosRecipe));
+		tacosRecipe.addIngredient(new Ingredient("Dried Cumin", new BigDecimal(2), teapoonUom, tacosRecipe));
+		tacosRecipe.addIngredient(new Ingredient("Sugar", new BigDecimal(2), teapoonUom, tacosRecipe));
+		tacosRecipe.addIngredient(new Ingredient("Salt", new BigDecimal(2), teapoonUom, tacosRecipe));
+		tacosRecipe.addIngredient(new Ingredient("Clove of Garlic", new BigDecimal(2), eachUom, tacosRecipe));
 		
 		tacosRecipe.getCategories().add(americanCategory);
 		tacosRecipe.getCategories().add(mexicanCategory); 
